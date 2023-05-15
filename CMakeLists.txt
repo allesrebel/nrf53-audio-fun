@@ -108,3 +108,7 @@ if ((CONFIG_AUDIO_DFU EQUAL 1) OR (CONFIG_AUDIO_DFU EQUAL 2))
         ${BLE5_CTR_SIGN_STEP}
     )
 endif()
+
+if (CONFIG_SW_CODEC_BV23)
+    add_subdirectory(bv32)
+endif()

@@ -13,7 +13,9 @@
 #include "pcm_stream_channel_modifier.h"
 #if (CONFIG_SW_CODEC_LC3)
 #include "sw_codec_lc3.h"
-#endif /* (CONFIG_SW_CODEC_LC3) */
+#elif (CONFIG_SW_CODEC_BV32)
+#include "sw_codec_bv32.h"
+#endif /* (CONFIG_SW_CODEC) */
 
 #include <zephyr/logging/log.h>
 LOG_MODULE_REGISTER(sw_codec_select, CONFIG_SW_CODEC_SELECT_LOG_LEVEL);

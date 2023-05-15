@@ -170,6 +170,12 @@ config SW_CODEC_LC3
 	help
 	  LC3 is the mandatory codec for LE Audio.
 
+config SW_CODEC_BV23
+	bool "BV32"
+	select SW_CODEC_BV32_BROADCOM
+	help
+	  BV32 is a fun free and open source codec.
+
 # Leave room for other codecs
 endchoice
 
